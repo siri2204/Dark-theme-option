@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel = "stylesheet" href = "styles.css">
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img src = "portfolio_site_img/logo.png" class = "logo">
+            <ul>
+                <li><a href = "">HOME</a></li>
+                <li><a href = "">ABOUT</a></li>
+                <li><a href = "">PORTFOLIO</a></li>
+                <li><a href = "">SERVICES</a></li>
+                <li><a href = "">HIRE ME</a></li>
+            </ul>
+            <img src = "portfolio_site_img/dark theme icon/moon.png" id = "icon">
+        </nav>
+        <div class="info">
+            <h1> I am <span>Siri K</span> </h1>
+            <p>This is my official portfolio website to showcase all the projects<br> i have done related to web development.</p>
+            <a href = "">Download CV</a>
+        </div>
+       
+    </div>
+    <script>
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                icon.src = "portfolio_site_img/dark theme icon/sun.png"
+            }else{
+                icon.src = "portfolio_site_img/dark theme icon/moon.png";
+            }
+        }
+    </script>
+</body>
+</html>
